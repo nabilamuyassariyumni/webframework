@@ -9,8 +9,8 @@ Route::get('/', function () { //memanggil sebuah kelas, :: = methot static, '/' 
 });
 
 Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
-
 Route::get('/dosen', [DosenController::class, 'index']);
+Route::get('/insert-sql', [MahasiswaController::class, 'insertSql']);
 
 // Route::get('/home', function(){
 //     echo "Halaman Home <br>";
